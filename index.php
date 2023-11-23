@@ -14,8 +14,17 @@
     require("modelo/conexion.php");
     require("controlador/registrar.php");
     require("controlador/editar.php");
+    require("controlador/eliminar.php");
     $sql = $conexion->query("SELECT * FROM img");
     ?>
+
+    <script>//Confirmar eliminar imagen...
+        function eliminar(){
+            let res=confirm("Estas seguro de elimar la imagen")
+            return res;
+        }
+    </script>
+
     <div class="p-3 table-responsive">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -57,7 +66,7 @@
                         </td>
                         <td>
                             <a data-bs-toggle="modal" data-bs-target="#modaleditar<?= $datos->id ?>" class="btn btn-warning">Editar<a>
-                                    <a href="" class="btn btn-danger">Eliminar</a>
+                                    <a href="index.php?id=<?= $datos->id ?>&nombre=<?= $datos->foto ?>" class="btn btn-danger" onclick="return eliminar()">Eliminar</a>
                         </td>
                     </tr>
                     <!-- Modal Editar-->
