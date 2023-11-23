@@ -1,0 +1,14 @@
+Categorias (CRUD)
+Participantes (CRUD)
+Score (Tabla)
+Número de compatidores y sus nombres. Dnde un panel te de la opción de poner tu nombre y los nombres de los demás.
+Agregar la opción de poner imagenes.
+Circuito de preguntas ("Te preguntamos <Nombre>") Inicio de cada pregunta.
+Sumado de Score.
+Sacar un ganador.
+Score por cada participante.
+Pantalla donde muestre los scores.
+Pantalla de cuantas rondas serán.
+Pantalla de Bienvenida. Flayer de los últimos participantes, Tabla de los mejores 3 confecha, etc.
+//Ajustar CRUD preguntas.
+//Banaco de preguntas (CRUD)
